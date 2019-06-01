@@ -1,0 +1,10 @@
+alias g="git"
+alias tlf="tail -f"
+alias b="bundle"
+alias be="bundle exec"
+alias ln='ln -v'
+alias mkdir='mkdir -p'
+alias ...='../..'
+alias l='ls'
+alias ll='ls -al'
+alias lh='ls -Alh'

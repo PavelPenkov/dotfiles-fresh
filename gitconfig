@@ -1,0 +1,63 @@
+[color]
+diff = auto
+status = auto
+branch = auto
+[user]
+name = Pavel Penkov
+email = ebonfortress@gmail.com
+[core]
+	excludesfile = /Users/synapse/.gitignore
+editor = /usr/bin/vim
+[github]
+	user = PavelPenkov
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 1920x1031+0+25
+	history-view-vpane-position = 867
+	file-view-vpane-position = 927
+	show-graph = true
+	file-view-hpane-position = 470
+	main-window-view = FileView
+[push]
+	default = simple
+[merge]
+	tool = smerge
+[diff]
+	tool = smerge
+[difftool "kdiff3"]
+  path = /usr/local/bin/kdiff3
+  trustExitCode = false
+[mergetool "kdiff3"]
+  path = /usr/local/bin/kdiff3
+  trustExitCode = false
+[difftool "idea"]
+  cmd = "/usr/local/bin/idea diff \"$LOCAL\" \"$REMOTE\""
+[mergetool "idea"]
+  cmd = "idea merge \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+[mergetool]
+	keepBackup = false
+	prompt = false
+[difftool]
+  prompt = false
+[alias]
+	co = checkout
+	ci = commit
+	dt = difftool
+	df = diff
+  a = add .
+  pr = pull --rebase
+  r = rebase
+  rb = for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[url "git@gitlab.ozon.ru:"]
+insteadOf = https://gitlab.ozon.ru/
+[mergetool "smerge"]
+	cmd = smerge mergetool \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	trustExitCode = true
+[difftool "smerge"]
+	cmd = smerge difftool \"$BASE\" \"$LOCAL\" \"$REMOTE\"
