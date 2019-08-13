@@ -3,8 +3,8 @@ diff = auto
 status = auto
 branch = auto
 [user]
-name = Pavel Penkov
-email = ebonfortress@gmail.com
+	name = Pavel Penkov
+	email = ppenkov@ozon.ru
 [core]
 	excludesfile = /Users/synapse/.gitignore
 editor = /usr/bin/vim
