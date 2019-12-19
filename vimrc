@@ -39,6 +39,7 @@ Plug 'gregsexton/gitv', {'on': ['Gitv']}
 Plug 'vim-syntastic/syntastic'
 Plug 'scrooloose/nerdcommenter'
 Plug 'mileszs/ack.vim'
+Plug 'ElmCast/elm-vim'
 call plug#end()
 
 " Switch syntax highlighting on, when the terminal has colors
