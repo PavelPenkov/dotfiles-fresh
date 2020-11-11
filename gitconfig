@@ -21,7 +21,7 @@ editor = /usr/bin/vim
 [push]
 	default = simple
 [merge]
-	tool = smerge
+	tool = idea
 [diff]
 	tool = smerge
 [difftool "kdiff3"]

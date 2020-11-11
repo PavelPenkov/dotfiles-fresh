@@ -157,3 +157,5 @@ let g:tsuquyomi_disable_quickfix = 1
 " let g:tsuquyomi_disable_default_mappings = 1
 autocmd FileType typescript nmap <buffer> <Leader>] <Plug>(TsuDefinition)
 autocmd FileType typescript nmap <buffer> <Leader>t <Plug>(TsuGoBack)
+
+set guifont=JetBrainsMono-Regular:h14

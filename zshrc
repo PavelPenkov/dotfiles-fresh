@@ -1,8 +1,9 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:/opt/spark/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/synapse/.oh-my-zsh"
+export ZSH_DISABLE_COMPFIX=true
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,3 +107,7 @@ export PATH=$PATH:$HOME/.poetry/bin
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/RenameMe/.sdkman"
+[[ -s "/Users/RenameMe/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/RenameMe/.sdkman/bin/sdkman-init.sh"
